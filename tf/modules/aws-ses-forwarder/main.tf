@@ -209,6 +209,8 @@ resource "aws_ses_receipt_rule_set" "main" {
 # Activate rule-set
 resource "aws_ses_active_receipt_rule_set" "main" {
   rule_set_name = "default-rule-set"
+
+  depends_on = [ aws_ses_receipt_rule_set.main ]
 }
 
 # Step-35 - SES permission to invoke lambda function
