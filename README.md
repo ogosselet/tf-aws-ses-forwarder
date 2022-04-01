@@ -22,7 +22,7 @@ Your DNS domain is managed by AWS Route 53.
 - cd tf
 - prepare the lambda function code as described here below
  
-### Pull the code used in the lambda fucntion
+### Pull the code used in the lambda function
 
 Pull down the pre-written Javascript function that we will modify add to a new Lambda function.
 
